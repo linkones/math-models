@@ -12,4 +12,12 @@
 - `utils/` 工具类：数据处理、可视化函数等
 
 ## 使用方法
-1. 克隆仓库到本地：自行调用即可
+1. 克隆仓库到本地：git clone https://github.com/linkones/math-models.git
+2. 安装依赖：pip install -r requirements.txt
+3.  调用示例（以线性回归为例）：
+```python
+from regression.linear_regression import linear_regression
+
+X_train, y_train = ...
+model = linear_regression(X_train, y_train)
+
